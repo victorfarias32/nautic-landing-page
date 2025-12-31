@@ -182,7 +182,6 @@ export default function App() {
   return (
     <div className={`min-h-screen font-sans antialiased selection:bg-blue-500 selection:text-white transition-colors duration-300 ${bgMain} ${textMain}`}>
       
-      {/* --- NAVBAR --- */}
       <header 
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
           scrolled 
@@ -277,15 +276,12 @@ export default function App() {
         </AnimatePresence>
       </header>
 
-      {/* --- HERO SECTION --- */}
       <section className={`relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden transition-colors duration-500 ${darkMode ? 'bg-slate-950' : 'bg-gradient-to-br from-white via-blue-50/30 to-white'}`}>
-        {/* Abstract Background Element */}
         <div className={`absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l pointer-events-none transition-colors duration-500 ${darkMode ? 'from-blue-900/10 to-transparent' : 'from-blue-50/50 to-transparent'}`} />
         
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             
-            {/* Left Column: Content */}
             <motion.div 
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -409,14 +405,12 @@ export default function App() {
                 </div>
               </motion.div>
 
-              {/* Decorative Circle */}
               <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full blur-3xl -z-10 transition-colors duration-500 ${darkMode ? 'bg-indigo-900/20' : 'bg-indigo-50/50'}`} />
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* --- MISSION SECTION --- */}
       <section id="missao" className={`py-24 transition-colors duration-500 ${bgSection}`}>
         <div className="container mx-auto px-6 max-w-4xl text-center">
           <motion.div 
@@ -426,7 +420,6 @@ export default function App() {
             variants={fadeInUp}
             className="relative"
           >
-            {/* Sutil linha vertical decorativa */}
             <div className="w-0.5 h-12 bg-blue-600 mx-auto mb-8 opacity-30"></div>
             
             <h2 className={`text-3xl md:text-4xl font-bold mb-8 tracking-tight ${textTitle}`}>
@@ -448,7 +441,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* --- DIFFERENTIATORS SECTION --- */}
       <section id="diferenciais" className={`py-24 transition-colors duration-500 ${bgSectionAlt}`}>
         <div className="container mx-auto px-6 max-w-7xl">
           <SectionTitle title="Os Nossos Diferenciais" subtitle isDark={darkMode} />
@@ -477,7 +469,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* --- SERVICES SECTION (Bento Style) --- */}
       <section id="servicos" className={`py-24 relative transition-colors duration-500 ${bgSection}`}>
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
           <SectionTitle title="Serviços de Automação & Otimização" subtitle isDark={darkMode} />
@@ -534,16 +525,13 @@ export default function App() {
         </div>
       </section>
 
-      {/* --- DASHBOARDS SECTION (Always Dark Mode style, adjusted slightly for global dark mode) --- */}
       <section id="dashboards" className="py-24 bg-slate-900 text-white relative overflow-hidden">
-        {/* Background Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
 
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
           <SectionTitle title="Dashboards Inteligentes" subtitle light isDark={true} />
           
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
-            {/* Left Column: Intro */}
             <div className="lg:col-span-1">
               <h3 className="text-2xl font-bold mb-4 text-white">Insights para Decisão</h3>
               <p className="text-slate-400 mb-6 leading-relaxed">
@@ -583,7 +571,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* --- CTA FINAL --- */}
       <section id="contato" className={`py-24 transition-colors duration-500 ${darkMode ? 'bg-slate-950' : 'bg-gradient-to-t from-white to-blue-50/50'}`}>
         <div className="container mx-auto px-6 max-w-5xl">
           <motion.div 
@@ -629,7 +616,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* --- FOOTER --- */}
       <footer className={`border-t pt-16 pb-8 transition-colors duration-500 ${darkMode ? 'bg-slate-900 border-slate-800' : 'bg-white border-slate-100'}`}>
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
