@@ -152,7 +152,7 @@ const SectionTitle = ({ title, subtitle, isDark, light = false }: { title: strin
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
